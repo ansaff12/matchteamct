@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cricket King - Join Free</title>
+
+<meta name="description" content="Join Cricket King for free daily cricket updates, match analysis and predictions.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Segoe UI,sans-serif;
+    background:#061b13;
+    color:white;
+}
+
+.container{
+    width:100%;
+    max-width:460px;
+    margin:auto;
+    padding:30px 16px;
+    text-align:center;
+    background:linear-gradient(180deg,#0b3925,#061b13);
+}
+
+/* LIVE BAR */
+
+.online{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:#174c2f;
+    color:#8dff9d;
+    padding:10px 20px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+    border:1px solid #36d66a;
+}
+
+.dot{
+    width:9px;
+    height:9px;
+    background:#39ff69;
+    border-radius:50%;
+    box-shadow:0 0 10px #39ff69;
+}
+
+/* PROFILE */
+
+.profile{
+    width:125px;
+    height:125px;
+    border-radius:50%;
+    margin:25px auto 12px;
+    overflow:hidden;
+    border:4px solid #ffcc00;
+    box-shadow:0 0 25px #ffb300;
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+h1{
+    font-size:24px;
+    margin:12px 0 7px;
+    font-weight:900;
+    color:#fff;
+}
+
+.tag{
+    color:#ffca28;
+    font-weight:bold;
+    font-size:15px;
+}
+
+/* RATING */
+
+.rating{
+    margin:17px;
+    color:#ffca28;
+    font-size:22px;
+}
+
+.rating small{
+    color:#ccc;
+    font-size:12px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:block;
+    background:linear-gradient(135deg,#ffeb3b,#ff9800);
+    color:#102418;
+    padding:17px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:900;
+    font-size:16px;
+    margin:20px 0;
+    box-shadow:0 5px 20px #ff980055;
+    border:1px solid #fff18b;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.03);
+    background:linear-gradient(135deg,#ff9800,#ffeb3b);
+}
+
+/* STATS */
+
+.stats{
+    display:flex;
+    gap:10px;
+    margin:22px 0;
+}
+
+.card{
+    flex:1;
+    background:linear-gradient(145deg,#155b36,#103d29);
+    padding:17px 5px;
+    border-radius:14px;
+    border:1px solid #287e4b;
+    box-shadow:0 3px 12px #0005;
+}
+
+.number{
+    color:#ffca28;
+    font-size:22px;
+    font-weight:900;
+    margin-bottom:5px;
+}
+
+/* CONTENT */
+
+.heading{
+    font-size:20px;
+    font-weight:900;
+    line-height:1.5;
+    margin-top:20px;
+}
+
+.heading span{
+    color:#ffca28;
+}
+
+.sub{
+    color:#c3d7c9;
+    margin:12px;
+    font-size:14px;
+    line-height:1.5;
+}
+
+/* ALERT */
+
+.alert{
+    background:linear-gradient(90deg,#ff5722,#ff9800);
+    color:white;
+    padding:14px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:900;
+    margin:22px 0;
+    box-shadow:0 4px 15px #ff572255;
+}
+
+/* FEATURES */
+
+.feature{
+    background:linear-gradient(120deg,#124b2e,#0c3322);
+    padding:16px;
+    margin:12px 0;
+    border-radius:13px;
+    text-align:left;
+    display:flex;
+    gap:13px;
+    align-items:center;
+    border:1px solid #286d43;
+    box-shadow:0 3px 10px #0003;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.icon{
+    font-size:27px;
+}
+
+/* MATCH SECTION */
+
+.match{
+    background:linear-gradient(135deg,#ffca28,#ff9800);
+    color:#172317;
+    padding:18px;
+    border-radius:15px;
+    margin:25px 0;
+}
+
+.match h2{
+    font-size:19px;
+    margin-bottom:10px;
+}
+
+.match p{
+    font-size:13px;
+    font-weight:bold;
+    line-height:1.7;
+}
+
+/* DISCLAIMER */
+
+.disclaimer{
+    margin-top:25px;
+    font-size:11px;
+    color:#a7b9ad;
+    line-height:1.7;
+    background:#102d20;
+    padding:15px;
+    border-radius:12px;
+}
+
+/* FOOTER */
+
+.ads{
+    margin-top:30px;
+    padding:18px;
+    border-top:1px solid #326347;
+    font-size:13px;
+    color:#b9c9be;
+}
+
+.ads a{
+    color:#ffca28;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.footer{
+    text-align:center;
+    margin:25px 0;
+    font-size:12px;
+    color:#b9c9be;
+    line-height:2.5;
+}
+
+.footer a{
+    margin:0 5px;
+    color:#ffca28;
+    text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- LIVE BAR -->
+
+<div class="online">
+<span class="dot"></span>
+🏏 CRICKET UPDATES LIVE
+</div>
+
+<!-- PROFILE -->
+
+<div class="profile">
+<img src="photo_2026-08-29 12.59.59.jpeg" alt="Cricket King">
+</div>
+
+<h1>ISHITA TIPS👑</h1>
+
+<div class="tag">
+🏆 YOUR DAILY CRICKET DESTINATION
+</div>
+
+<div class="rating">
+★★★★★
+<br>
+<small>Cricket Lovers Community</small>
+</div>
+
+<!-- JOIN BUTTON -->
+
+<a class="btn" href="https://telegram.me/+25Nxbnrw-91hYjJl">
+🏏 JOIN FREE CRICKET CHANNEL →
+</a>
+
+<!-- STATS -->
+
+<div class="stats">
+
+<div class="card">
+<div class="number">T20</div>
+Cricket
+</div>
+
+<div class="card">
+<div class="number">ODI</div>
+Analysis
+</div>
+
+<div class="card">
+<div class="number">IPL</div>
+Updates
+</div>
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="heading">
+GET <span>FREE CRICKET UPDATES</span><br>
+EVERY SINGLE DAY! 🏏
+</div>
+
+<div class="sub">
+Join our cricket community and stay updated with match previews, player performances and cricket analysis.
+</div>
+
+<div class="alert">
+🔥 JOIN OUR FREE CRICKET COMMUNITY
+</div>
+
+<!-- FEATURES -->
+
+<div class="feature">
+<div class="icon">🏏</div>
+Daily Cricket Match Updates
+</div>
+
+<div class="feature">
+<div class="icon">📊</div>
+Detailed Match Analysis
+</div>
+
+<div class="feature">
+<div class="icon">🔥</div>
+IPL & T20 Special Updates
+</div>
+
+<div class="feature">
+<div class="icon">🏆</div>
+ODI & Test Match Coverage
+</div>
+
+<div class="feature">
+<div class="icon">👥</div>
+Cricket Lovers Community
+</div>
+
+<!-- MATCH BOX -->
+
+<div class="match">
+
+<h2>🏏 LOVE CRICKET?</h2>
+
+<p>
+LIVE MATCH DISCUSSIONS<br>
+PLAYER PERFORMANCE UPDATES<br>
+CRICKET NEWS & ANALYSIS
+</p>
+
+</div>
+
+<!-- SECOND BUTTON -->
+
+<a class="btn" href="https://telegram.me/+25Nxbnrw-91hYjJl">
+🚀 JOIN FREE TELEGRAM CHANNEL →
+</a>
+
+<!-- DISCLAIMER -->
+
+<div class="disclaimer">
+
+<strong>DISCLAIMER</strong><br>
+
+This channel is for informational and
+educational purposes only. Cricket
+analysis and predictions are not
+guaranteed outcomes. Please make your
+own informed decisions.
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="ads">
+
+🔥 Powered by
+
+<a href="https://t.me/+8njsioC8_yZiNjA9">
+Growrh Zone Ads
+</a>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<a href="privacy.html">Privacy Policy</a> |
+
+<a href="terms.html">Terms & Conditions</a> |
+
+<a href="disclaimer.html">Disclaimer</a> |
+
+<a href="contact.html">Contact Us</a>
+
+</div>
+
+</body>
+</html>
